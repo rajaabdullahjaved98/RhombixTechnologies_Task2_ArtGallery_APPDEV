@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar (App Title Bar) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Art Gallery"
+        android:backgroundTint="#2962FF"
+        android:background="#2962FF"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"/>
+
+    <!-- Gallery RecyclerView to display images -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/galleryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Upload Button Layout (Centered FAB) -->
+    <LinearLayout
+        android:id="@+id/uploadButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="#E8EDF0">
+
+        <!-- Floating Action Button (FAB) to Upload Images -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fabWithTextButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textSize="30sp"
+            android:text="+"
+            android:icon="@drawable/ic_upload"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2962FF"
+            android:layout_margin="16dp"
+            app:cornerRadius="200px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/userEmailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="User Email"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="45dp"/>
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/rounded_logo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

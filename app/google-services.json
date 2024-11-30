@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044278275115",
+    "project_id": "digital-art-gallery-9f62f",
+    "storage_bucket": "digital-art-gallery-9f62f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044278275115:android:29445b31049d5e80374e6e",
+        "android_client_info": {
+          "package_name": "com.example.digitalartgallery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALCd82ld2Io_I1FksIaz3d7UEjpeLcfgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
